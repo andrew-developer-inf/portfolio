@@ -1,0 +1,80 @@
+/* Podstawowy reset */
+body, h1, h2, h3, p, ul, li, a {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    color: white;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #1E1E2F;
+    color: #FFF;
+    line-height: 1.6;
+}
+
+/* Nagłówek */
+header {
+    background: #0066FF;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.5rem;
+}
+
+header nav ul {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+header nav ul li a {
+    color: #FFF;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+/* Sekcje */
+.section {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Umiejętności */
+.skills-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+.skill {
+    background: #2D2D4A;
+    padding: 15px 30px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+/* Projekty */
+.project {
+    margin-bottom: 20px;
+    background: #2D2D4A;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+/* Stopka */
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background: #2D2D4A;
+}
