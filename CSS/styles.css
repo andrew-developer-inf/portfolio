@@ -1,4 +1,4 @@
-/* Podstawowy reset */
+/* RESET */
 body, h1, h2, h3, p, ul, li, a {
     margin: 0;
     padding: 0;
@@ -8,73 +8,118 @@ body, h1, h2, h3, p, ul, li, a {
 }
 
 body {
-    font-family: 'Roboto', sans-serif;
-    background-color: #1E1E2F;
+    font-family: 'Inter', sans-serif;
+    background-color: #0F172A;
     color: #FFF;
     line-height: 1.6;
 }
 
-/* Nagłówek */
+/* Header */
 header {
-    background: #0066FF;
+    background: linear-gradient(90deg, #1E3A8A, #9333EA);
     padding: 20px 0;
     text-align: center;
 }
 
-header h1 {
+header .title {
     font-size: 2.5rem;
+    font-weight: bold;
 }
 
-header nav ul {
+header .subtitle {
     margin-top: 10px;
+    font-size: 1.2rem;
+}
+
+header .menu {
+    margin-top: 15px;
     display: flex;
     justify-content: center;
     gap: 20px;
 }
 
-header nav ul li a {
+header .menu li a {
     color: #FFF;
     font-size: 1rem;
     font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+header .menu li a:hover {
+    color: #FACC15;
 }
 
 /* Sekcje */
 .section {
-    padding: 50px 20px;
+    padding: 60px 20px;
     text-align: center;
 }
 
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
+.gradient-bg {
+    background: linear-gradient(90deg, #9333EA, #1E3A8A);
 }
 
-/* Umiejętności */
-.skills-grid {
+/* About */
+.about-content {
     display: flex;
-    flex-wrap: wrap;
+    align-items: center;
     justify-content: center;
-    gap: 15px;
+    gap: 20px;
+}
+
+.about-content .avatar {
+    border-radius: 50%;
+    max-width: 150px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Skills */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+    margin-top: 30px;
 }
 
 .skill {
-    background: #2D2D4A;
-    padding: 15px 30px;
-    border-radius: 5px;
-    font-weight: bold;
-}
-
-/* Projekty */
-.project {
-    margin-bottom: 20px;
-    background: #2D2D4A;
+    background: #1E293B;
     padding: 20px;
-    border-radius: 5px;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: transform 0.3s ease;
 }
 
-/* Stopka */
+.skill:hover {
+    transform: scale(1.1);
+    background: #2563EB;
+}
+
+/* Projects */
+.project-grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.project-card {
+    background: #1E293B;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 300px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.7);
+}
+
+/* Footer */
 footer {
     text-align: center;
     padding: 10px 0;
-    background: #2D2D4A;
+    background: #1E293B;
+    font-size: 0.9rem;
 }
